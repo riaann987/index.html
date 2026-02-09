@@ -2,58 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ReadSpark</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
       background: #0f172a;
       color: #e5e7eb;
     }
     header {
-      padding: 3rem 2rem;
+      padding: 60px 20px;
       text-align: center;
-      background: linear-gradient(135deg, #6366f1, #22c55e);
-      color: white;
+      background: linear-gradient(135deg, #2563eb, #1e40af);
     }
-    header h1 { font-size: 3rem; }
-    header p { margin-top: 1rem; font-size: 1.2rem; }
-
-    section { padding: 4rem 2rem; max-width: 1100px; margin: auto; }
-    h2 { font-size: 2.2rem; margin-bottom: 1rem; }
-    p { line-height: 1.7; margin-bottom: 1rem; }
-
-    .features {
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #93c5fd;
+      margin-bottom: 20px;
+    }
+    .features, .products, .leaderboard {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      gap: 20px;
     }
     .card {
-      background: #020617;
-      padding: 1.5rem;
-      border-radius: 16px;
-      border: 1px solid #1e293b;
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
     }
-
-    .leaderboard table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1.5rem;
+    .card h3 {
+      margin-top: 0;
+      color: #bfdbfe;
     }
-    .leaderboard th, .leaderboard td {
-      padding: 1rem;
-      border-bottom: 1px solid #1e293b;
-      text-align: left;
-    }
-    .leaderboard th { color: #22c55e; }
-
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 30px;
       background: #020617;
-      color: #94a3b8;
+      color: #9ca3af;
     }
   </style>
 </head>
@@ -61,80 +55,96 @@
 
 <header>
   <h1>ReadSpark</h1>
-  <p>Where reading becomes a challenge, a community, and a spark 🔥</p>
+  <p>Turning reading into a habit through personalization, rewards, and competition.</p>
 </header>
 
 <section>
-  <h2>What is ReadSpark?</h2>
+  <h2>📘 What is ReadSpark?</h2>
   <p>
-    ReadSpark is a digital platform built to make reading exciting, social, and rewarding.
-    It combines books, articles, writing, and challenges into one space designed for students and young readers.
+    ReadSpark is a student-focused reading platform that motivates young readers
+    through personalized content, reading challenges, credits, and leaderboards.
+    It makes reading engaging, interactive, and rewarding.
   </p>
 </section>
 
 <section>
-  <h2>Core Features</h2>
+  <h2>✨ Key Features</h2>
   <div class="features">
     <div class="card">
-      <h3>📚 Smart Reading</h3>
-      <p>Track books, articles, and reading time automatically.</p>
+      <h3>Personalized Reading</h3>
+      <p>Content tailored by reading level and genre preferences.</p>
     </div>
     <div class="card">
-      <h3>🏆 Leaderboards</h3>
-      <p>Compete weekly & monthly for most books read, reading streaks, and advanced reading levels.</p>
+      <h3>Credit System</h3>
+      <p>Earn credits by reading daily, completing challenges, and quizzes.</p>
     </div>
     <div class="card">
-      <h3>✍️ Writing Zone</h3>
-      <p>Publish stories, essays, poems, and get community feedback.</p>
+      <h3>Challenges & Streaks</h3>
+      <p>Weekly and monthly reading goals to build consistency.</p>
     </div>
     <div class="card">
-      <h3>🎖 Badges & Rewards</h3>
-      <p>Earn badges, streak bonuses, and exclusive ranks.</p>
+      <h3>Leaderboards</h3>
+      <p>Rankings for most books read, highest streaks, and advanced readers.</p>
     </div>
   </div>
 </section>
 
-<section class="leaderboard">
-  <h2>Leaderboard Preview</h2>
-  <table>
-    <tr>
-      <th>Rank</th>
-      <th>User</th>
-      <th>Books Read</th>
-      <th>Streak</th>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>ReaderX</td>
-      <td>12</td>
-      <td>21 days</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>BookNerd</td>
-      <td>10</td>
-      <td>18 days</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>InkSoul</td>
-      <td>8</td>
-      <td>15 days</td>
-    </tr>
-  </table>
+<section>
+  <h2>📚 Products on ReadSpark</h2>
+  <div class="products">
+    <div class="card">
+      <h3>The Soul’s Labyrinth</h3>
+      <p>
+        A dark, philosophical fiction exploring the human mind, choices, and inner conflicts.
+        Includes guided questions, quizzes, and discussion prompts.
+      </p>
+      <p><strong>Access:</strong> Premium / Credits</p>
+    </div>
+
+    <div class="card">
+      <h3>ReadSpark Originals</h3>
+      <p>
+        Exclusive short stories and articles written by students and mentors,
+        available only on the ReadSpark platform.
+      </p>
+      <p><strong>Access:</strong> Free + Premium</p>
+    </div>
+
+    <div class="card">
+      <h3>Reading Mastery Packs</h3>
+      <p>
+        Curated collections focused on comprehension, speed reading,
+        and critical thinking.
+      </p>
+      <p><strong>Access:</strong> Premium</p>
+    </div>
+  </div>
 </section>
 
 <section>
-  <h2>Our Vision</h2>
-  <p>
-    ReadSpark aims to build a generation that reads not because they have to,
-    but because they want to. By blending competition, creativity, and community,
-    we turn reading into a lifestyle.
-  </p>
+  <h2>🏆 Leaderboard Preview</h2>
+  <div class="leaderboard">
+    <div class="card">
+      <h3>Top Readers</h3>
+      <p>1. Aarav – 14 books</p>
+      <p>2. Riya – 12 books</p>
+      <p>3. Kabir – 10 books</p>
+    </div>
+    <div class="card">
+      <h3>Longest Streaks</h3>
+      <p>1. Mehul – 21 days</p>
+      <p>2. Ananya – 18 days</p>
+      <p>3. Ishaan – 15 days</p>
+    </div>
+    <div class="card">
+      <h3>Advanced Readers</h3>
+      <p>Based on quiz scores & difficulty level</p>
+    </div>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 ReadSpark • Built by students, for students</p>
+  <p>© 2026 ReadSpark | Student Startup Prototype</p>
 </footer>
 
 </body>
